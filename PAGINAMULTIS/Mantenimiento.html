@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- site metas -->
+    <title>MultiServicios - Mantenimiento</title>
+    <link rel="icon" type="image/png" href="images/logos.png">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- mantenimiento css -->
+    <link rel="stylesheet" href="css/mantenimiento.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+<body class="main-layout">
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Inicio</a>
+        <a href="#mantenimiento">Sobre nosotros</a>
+        <a href="#" id="toggleServicios" onclick="toggleMenu(event)">Servicios <span class="dropdown-icon">▼</span></a>
+        <div id="menuServicios" class="menuServicios">
+            <a href="Mantenimiento.html" class="yellow">Mantenimiento</a>
+            <a href="Reparacion De Camiones.html" class="yellow">Reparacion De Camiones</a>
+            <a href="Equipos Aliados.html" class="yellow">Equipos Aliados</a>
+            <a href="Conversiones De Chasis.html" class="yellow">Conversiones De Chasis</a>
+            <a href="Rescate Carretero.html" class="yellow">Rescate Carretero</a>
+            <a href="Compra Y Venta.html" class="yellow">Compra Y Venta</a>
+        </div>
+
+        <a href="#Ubi">Ubicación</a>
+    </div>
+
+
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <H5>MANTENIMIENTO |</H5>
+            </div>
+            <div class="slide">
+                <H5>REPARACION DE CAMIONES |</H5>
+            </div>
+            <div class="slide">
+                <H5>EQUIPOS ALIADOS |</H5>
+            </div>
+            <div class="slide">
+                <H5>FABRICACIÓN DE CAJAS |</H5>
+            </div>
+            <div class="slide">
+                <H5>PLATAFORMAS |</H5>
+            </div>
+            <div class="slide">
+                <H5>CONVERSIONES DE CHASIS |</H5>
+            </div>
+            <div class="slide">
+                <H5>RESCATE CARRETERO |</H5>
+            </div>
+            <div class="slide">
+                <H5>COMPRA Y VENTA DE VEHICULOS COMERCIALES |</H5>
+            </div>
+        </div>
+    </div>
+    
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        <div class="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logos.png" alt="#" /></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-8">
+                        <div class="right_bottun">
+                            <button class="openbtn" onclick="openNav()"><img src="images/menu_icon.png" alt="#"/> </button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header inner -->
+    <!-- end header -->
+
+ <!-- Mantenimiento Section -->
+<section id="mantenimiento" class="service-section">
+    <div class="banner">
+        <h2 class="banner-title">Mantenimiento</h2> 
+    </div>
+    <div class="container">
+        <div class="section-title">
+            <p>Nos especializamos en el mantenimiento de vehículos comerciales y maquinaria pesada, asegurando su óptimo funcionamiento.</p>
+        </div>
+        <div class="service-details">
+            <div class="service-box">
+                <i class="fas fa-tools"></i>
+                <h3>Mantenimiento Preventivo</h3>
+                <p>Realizamos inspecciones y mantenimiento regular para prevenir fallos mecánicos.</p>
+                <button class="send_btn quote_btn" onclick="openPopup()">Cotización</button>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-cogs"></i>
+                <h3>Mantenimiento Correctivo</h3>
+                <p>Solucionamos problemas mecánicos y realizamos reparaciones necesarias.</p>
+                <button class="send_btn quote_btn" onclick="openPopup()">Cotización</button>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-oil-can"></i>
+                <h3>Suspensión y frenos</h3>
+                <p>Ofrecemos servicios de suspensión y frenos para garantizar el óptimo funcionamiento de su vehículo.</p>
+                <button class="send_btn quote_btn" onclick="openPopup()" style="position: relative; top: 34px;">Cotización</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Popup Modal -->
+<div id="popup" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2 style="color: red; font-size: 24px;">Solicite una Cotización</h2>
+        <div class="row">
+            <div class="col-md-7">
+                <form id="request" class="main_form" action="https://formsubmit.co/guillermoh123456@gmail.com" method="POST">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input class="contactus" placeholder="Nombre" type="text" name="Nombre">
+                        </div>
+                        <div class="col-md-12">
+                            <input class="contactus" placeholder="Correo" type="email" name="Correo">
+                        </div>
+                        <div class="col-md-12">
+                            <input class="contactus" placeholder="Número" type="text" name="Numero Telefono">
+                        </div>
+                        <div class="col-md-12">
+                            <input class="contactusmess" placeholder="Asunto" type="text" name="Servicio/Asunto">
+                        </div>
+                        <div class="col-md-12">
+                            <button class="send_btn" type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-5 d-flex align-items-center justify-content-center">
+                <div class="co_tru">
+                    <figure><img src="images/logos.png" alt="#"/></figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- Sección de Beneficios del Servicio de Mantenimiento de Camiones -->
+<section id="beneficios" class="benefits-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Beneficios del Servicio</h2>
+        </div>
+        <div class="benefits-list">
+            <!-- Primer beneficio -->
+            <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <h3>Mejora de la seguridad</h3>
+                <p>El mantenimiento regular ayuda a identificar y corregir problemas de seguridad, garantizando un funcionamiento seguro de los camiones en la carretera.</p>
+            </div>
+            <!-- Segundo beneficio -->
+            <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <h3>Aumento de la eficiencia</h3>
+                <p>Un camión bien mantenido tiende a ser más eficiente en términos de consumo de combustible y rendimiento, lo que puede ahorrar costos a largo plazo.</p>
+            </div>
+            <!-- Tercer beneficio -->
+            <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <h3>Reducción de costos de reparación</h3>
+                <p>La detección temprana de problemas durante el mantenimiento regular puede prevenir fallas costosas y prolongar la vida útil del camión, ahorrando dinero en reparaciones mayores.</p>
+            </div>
+        </div>
+    </div>
+ </section>
+ 
+
+<!-- footer -->
+<footer>
+    <div class="footer bottom_cross1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <ul class="location_icon">
+                        <li>
+                            <a href="mailto:recepcion@multiserviciosdelnoroeste.com">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <span class="email-label-smaller">Email:</span>
+                                <span class="email-link">recepcion@multiserviciosdelnoroeste.com</span>
+                            </a>
+                        </li>
+                        <li>
+                         <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                         Phone: +52 1 662 419 2905
+                     </li>
+                        <li>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/profile.php?id=61559337425929&mibextid=LQQJ4d" target="_blank">
+                                    <i class="fab fa-facebook" aria-hidden="true" style="font-size: 1.2em;"></i>
+                                </a>
+                                <a href="https://www.instagram.com/multiservicios_del_noroeste?igsh=MWh6aGR1bWlkY3l4Yw%3D%3D&utm_source=qr" target="_blank">
+                                    <i class="fab fa-instagram" aria-hidden="true" style="font-size: 1.2em;"></i>
+                                </a>
+                                <a href="https://www.tiktok.com/@multiserviciosdelnoroest?_t=8mVph6abDLa&_r=1" target="_blank">
+                                    <i class="fab fa-tiktok" aria-hidden="true" style="font-size: 1.2em;"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="Ubi" class="col-md-8" style="width: 100%; overflow: hidden;">
+                    <div class="map map-container" style="margin-left: 100px; margin-right: 0; max-width: 100%; flex: 0 0 auto;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3542.826875941018!2d-110.99523128439525!3d29.079055582281882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ad271e75b2f14d%3A0x4480d8b8e1d91ae0!2sPerif.%20Sur%20552%2C%20Y%20Griega%2C%2083290%20Hermosillo%2C%20Son.!5e0!3m2!1sen!2smx!4v1640327391764!5m2!1sen!2smx" class="map-iframe" allowfullscreen="" loading="lazy" style="width: 100%; height: 300px; border: 0;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>© 2024 All Rights Reserved. Design by <a href="">Uthermosillo</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </footer>
+ 
+ 
+ 
+ <!-- end footer -->
+
+
+<!-- Javascript files-->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.0.0.min.js"></script>
+<!-- sidebar -->
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/custom.js"></script>
+<script>
+    function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+    }
+</script>
+<script>
+    function toggleMenu(event) {
+        event.preventDefault();
+        var menu = document.getElementById("menuServicios");
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "block";
+        }
+    }
+</script>
+
+<script>
+    // Función para abrir el popup
+    function openPopup() {
+        document.getElementById("popup").style.display = "block";
+        document.querySelector('.carousel-control-prev').style.display = 'none';
+        document.querySelector('.carousel-control-next').style.display = 'none';
+    }
+
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+        document.querySelector('.carousel-control-prev').style.display = 'block';
+        document.querySelector('.carousel-control-next').style.display = 'block';
+    }
+
+    // Cierra el popup al hacer clic fuera de él
+    window.onclick = function(event) {
+        var popup = document.getElementById('popup');
+        if (event.target == popup) {
+            popup.style.display = 'none';
+        }
+    }
+</script>
+   
+
+<div class="whatsapp-button">
+    <a href="https://wa.me/5216624192905?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+</div>
+
+
+
+
+</body>
+</html>

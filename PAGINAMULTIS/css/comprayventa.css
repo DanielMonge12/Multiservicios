@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.bannercv {
+  background: url('../images/trucksbanner.jpg') no-repeat center center;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.bannercv-title {
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.compra-venta {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.compra-venta h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.contenedor-vehiculos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.vehiculo {
+  width: calc(30% - 20px);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vehiculo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.vehiculo img {
+  width: 100%;
+  height: 300px; /* Establecer una altura fija */
+  object-fit: cover; /* Ajustar la imagen para que cubra el contenedor sin distorsión */
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.vehiculo img:hover {
+  transform: scale(1.05);
+}
+
+.descripcion {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.descripcion p {
+  margin: 5px 0;
+}
+
+.whatsapp-buttonn {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.whatsapp-buttonn button {
+  background-color: #25D366;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-buttonn button:hover {
+  background-color: #128C7E;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .vehiculo {
+      width: calc(45% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .vehiculo {
+      width: calc(100% - 20px);
+  }
+
+  .compra-venta h1 {
+      font-size: 28px;
+  }
+
+  .bannercv {
+      height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .compra-venta h1 {
+      font-size: 24px;
+  }
+
+  .descripcion {
+      font-size: 12px;
+  }
+
+  .bannercv {
+      height: 150px;
+  }
+}

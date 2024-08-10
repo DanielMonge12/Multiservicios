@@ -1,0 +1,1372 @@
+/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700i,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,800i&display=swap');
+
+/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
+ 2) font-family: 'Poppins', sans-serif;
+ ----------------------------------------*****/
+
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(css/animate.min.css);
+@import url(css/normalize.css);
+@import url(css/icomoon.css);
+@import url(css/font-awesome.min.css);
+@import url(css/meanmenu.css);
+@import url(css/owl.carousel.min.css);
+@import url(css/swiper.min.css);
+@import url(css/slick.css);
+@import url(css/jquery.fancybox.min.css);
+@import url(css/jquery-ui.css);
+@import url(css/nice-select.css);
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+
+* {
+     box-sizing: border-box !important;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     color: #666666;
+     font-size: 14px;
+     font-family: 'Poppins', sans-serif;
+     line-height: 1.80857;
+     font-weight: normal;
+}
+
+a {
+     color: #1f1f1f;
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     letter-spacing: 0;
+     font-weight: normal;
+     position: relative;
+     padding: 0 0 10px 0;
+     font-weight: normal;
+     line-height: normal;
+     color: #111111;
+     margin: 0
+}
+
+h1 {
+     font-size: 24px;
+}
+
+h2 {
+     font-size: 18px;
+}
+
+h3 {
+     font-size: 18px;
+}
+
+h4 {
+     font-size: 16px
+}
+
+h5 {
+     font-size: 14px
+}
+
+h6 {
+     font-size: 13px
+}
+
+*,
+*::after,
+*::before {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+     color: #212121;
+     text-decoration: none!important;
+     opacity: 1
+}
+
+button:focus {
+     outline: none;
+}
+
+ul,
+li,
+ol {
+     margin: 0px;
+     padding: 0px;
+     list-style: none;
+}
+
+p {
+     margin: 0px;
+     font-weight: 500;
+     font-size: 15px;
+     line-height: 24px;
+}
+
+a {
+     color: #222222;
+     text-decoration: none;
+     outline: none !important;
+}
+
+a,
+.btn {
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+img {
+     max-width: 100%;
+     height: auto;
+}
+
+ :focus {
+     outline: 0;
+}
+
+.btn-custom {
+     margin-top: 20px;
+     background-color: transparent !important;
+     border: 2px solid #ddd;
+     padding: 12px 40px;
+     font-size: 16px;
+}
+
+.lead {
+     font-size: 18px;
+     line-height: 30px;
+     color: #767676;
+     margin: 0;
+     padding: 0;
+}
+
+.form-control:focus {
+     border-color: #ffffff !important;
+     box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+}
+
+.navbar-form input {
+     border: none !important;
+}
+
+.badge {
+     font-weight: 500;
+}
+
+blockquote {
+     margin: 20px 0 20px;
+     padding: 30px;
+}
+
+button {
+     border: 0;
+     margin: 0;
+     padding: 0;
+     cursor: pointer;
+}
+
+.full {
+     float: left;
+     width: 100%;
+}
+
+.full {
+     width: 100%;
+     float: left;
+     margin: 0;
+     padding: 0;
+}
+
+
+/**-- heading section --**/
+
+
+/*---------------------------- preloader area ----------------------------*/
+
+.loader_bg {
+     position: fixed;
+     z-index: 9999999;
+     background: #fff;
+     width: 100%;
+     height: 100%;
+}
+
+.loader {
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     left: 0;
+     top: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.loader img {
+     width: 280px;
+}
+
+
+/*-- header area --*/
+
+
+/*-- sidebar  navigation--*/
+
+.sidepanel {
+     width: 0;
+     position: fixed;
+     z-index: 9999;
+     height: 100%;
+     top: 0;
+     left: 0;
+     background-color: #070101;
+     overflow-x: hidden;
+     transition: 0.5s;
+     padding-top: 60px;
+}
+
+.sidepanel a {
+     padding: 8px 8px 8px 32px;
+     text-decoration: none;
+     font-size: 18px;
+     color: #fff;
+     display: block;
+     transition: 0.3s;
+}
+
+.sidepanel a:hover {
+     color: #DF1C2A;
+}
+
+.sidepanel .closebtn {
+     position: absolute;
+     top: 0;
+     right: 25px;
+     font-size: 36px;
+}
+
+.openbtn {
+     font-size: 20px;
+     cursor: pointer;
+     background-color: transparent;
+     padding: 0;
+     border: none;
+     margin-left: 16px;
+}
+
+
+/*--      end sidebar  navigation--*/
+
+.logo {
+     padding-top: 12px;
+
+ }
+ 
+ .logo img {
+     width: 150px; /* Ajusta el valor para el ancho deseado */
+     height: 140px; /* Ajusta el valor para la altura deseada */
+     margin-top: -45px;
+ }
+ 
+ 
+
+ul.conat_info li {
+     display: inline-block;
+     padding: 0 26px;
+}
+
+ul.conat_info li a {
+     color: #fff;
+     display: inline-block;
+     font-size: 30px;
+}
+
+ul.conat_info li a:hover {
+     color: #fff;
+}
+
+.right_bottun {
+     float: right;
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.header {
+     width: 100%;
+     padding: 30px 30px;
+     background: transparent;
+     position: absolute;
+     z-index: 999;
+}
+
+
+/** banner section **/
+
+.banner_main {
+     background: url(../images/banner.png);
+     padding: 300px 0px 0px 0px;
+     background-size: auto 78%;
+     background-repeat: no-repeat;
+     min-height: 1150px;
+     background-position: right top;
+}
+
+.bannerr_main {
+     padding: 300px 0px 0px 0px;
+     background-size: auto 78%;
+     background-repeat: no-repeat;
+     min-height: 1150px;
+     background-position: right top;
+}
+
+.text-bg {
+     margin-top: 70px;
+     text-align: left;
+     float: right;
+     max-width: 430px;
+     width: 100%;
+}
+
+.text-bg h1 {
+     color: #DF1C2A;
+     font-size: 60px;
+     line-height: 70px;
+     padding-bottom: 45px;
+     font-weight: bold;
+}
+
+.text-bg span {
+     color: #222222;
+     font-weight: 500;
+     font-size: 17px;
+     line-height: 30px;
+     margin-bottom: 30px;
+     display: block;
+}
+
+.ban_track {
+     margin-top: 55px;
+}
+
+.banner_slide {
+     padding: 0 80px;
+}
+.bannerr_slide {
+     padding: 0 80px;
+}
+
+.ban_track figure {
+     margin: 0;
+}
+
+.transfot {
+     text-align: left;
+}
+
+.transfot span {
+     color: #fff;
+     font-size: 17px;
+}
+
+.transfot h3 {
+     color: #fff;
+     font-size: 23px;
+     line-height: 30px;
+     font-weight: 500;
+     margin-bottom: 16px;
+}
+
+.transfot_form {
+     padding: 0 15px;
+     height: 40px;
+     margin-bottom: 15px;
+     border: #fff solid 1px;
+     font-size: 16px;
+}
+
+.get_now {
+     max-width: 150px;
+     width: 100%;
+     padding: 6px 0;
+     background: #222b3c;
+     color: #fff;
+     font-size: 17px;
+}
+
+.get_now:hover {
+     background-color: #000;
+}
+
+#banner1 .carousel-caption {
+     position: inherit;
+     padding: 0;
+}
+
+#banner1 .carousel-indicators {
+     display: none;
+}
+
+#banner1 .carousel-control-prev,
+#banner1 .carousel-control-next {
+     width: 45px;
+     height: 45px;
+     background: transparent;
+     opacity: 1;
+     font-size: 30px;
+     color: #fff;
+     border-radius: 40px;
+     border: #fff solid 2px;
+}
+
+#banner1 .carousel-control-prev:hover,
+#banner1 .carousel-control-next:hover,
+#banner1 .carousel-control-prev:focus,
+#banner1 .carousel-control-next:focus {
+     background: #000;
+     color: #fff;
+}
+
+#banner1 a.carousel-control-prev {
+     position: absolute;
+     left: inherit;
+     top: 35%;
+     right: 16px;
+}
+
+#banner1 a.carousel-control-next {
+     position: absolute;
+     right: 16px;
+     bottom: 10px;
+     top: 50%;
+}
+
+
+/** end banner section **/
+
+.titlepage h2 {
+     font-size: 50px;
+     color: #DF1C2A;
+     line-height: 45px;
+     font-weight: bold;
+     padding: 0;
+}
+
+.d_flex {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+.read_more {
+     font-size: 20px;
+     background-color: transparent;
+     color: #DF1C2A !important;
+     padding: 13px 0px;
+     width: 100%;
+     max-width: 198px;
+     font-weight: 500;
+     position: relative;
+     display: block;
+     line-height: 1px;
+}
+
+.read_more::before {
+     position: absolute;
+     content: "";
+     border-right: #262626 solid 80px;
+     width: 200px;
+     height: 1px;
+     line-height: 1px;
+}
+
+
+/** about section **/
+
+.about {
+     background-color: #ffffff;
+     margin-top: -160px;
+}
+
+.about .about_img figure {
+     margin: 0;
+}
+
+.about .about_img figure img {
+     width: 100%;
+}
+
+.about .titlepage p {
+     padding: 30px 0px;
+     color: #2a2a2c;
+     font-size: 17px;
+     line-height: 32px;
+     font-weight: 400;
+     display: inline-block;
+}
+
+
+/** end about section **/
+
+
+/* service section */
+
+.service {
+     background-color: #f0f2f5; /* Fondo claro y moderno */
+     margin-top: 80px;
+     padding: 90px 0;
+ }
+ 
+ .service .titlepage {
+     text-align: center;
+     padding-bottom: 30px;
+ }
+ 
+ .service .titlepage p {
+     color: #555; /* Color de texto más suave */
+     font-size: 18px;
+     line-height: 1.6;
+     padding-top: 20px;
+     margin: 0 20px;
+ }
+ 
+ .service_main {
+     display: flex;
+     justify-content: flex-start;
+     flex-wrap: nowrap;
+     overflow-x: auto;
+     padding: 20px;
+     gap: 30px; /* Mayor separación entre cajas */
+     scroll-snap-type: x mandatory;
+ }
+ 
+ .service_box {
+     flex: 0 0 220px; /* Ancho mayor para cada caja */
+     text-align: center;
+     background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Gradiente sutil */
+     border-radius: 15px; /* Bordes más redondeados */
+     padding: 30px; /* Más espacio interno */
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave y extendida */
+     scroll-snap-align: start;
+     transition: transform 0.3s, box-shadow 0.3s;
+     margin: 10px; /* Agrega margen alrededor de cada caja */
+ }
+ 
+ .service_box:hover {
+     transform: translateY(-10px); /* Mayor efecto de elevación al pasar el cursor */
+     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el cursor */
+ }
+ 
+ .service_box img {
+     max-width: 100%;
+     height: auto;
+     margin-bottom: 20px; /* Mayor espacio entre la imagen y el texto */
+ }
+ 
+ .service_box i {
+     width: 160px;
+     height: 160px;
+     border-radius: 50%; /* Bordes completamente redondeados */
+     margin: 0 auto 20px; /* Alineación centrada y mayor margen inferior */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: linear-gradient(145deg, #ffffff, #909090); /* Gradiente en el fondo del icono */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para el icono */
+ }
+ 
+ .service_box i img {
+     width: 70%;
+ }
+ 
+ .service_box h4 {
+     color: #333; /* Color de texto más oscuro y moderno */
+     font-size: 20px; /* Tamaño de fuente mayor */
+     margin-top: 20px;
+     padding: 0;
+     font-weight: 600;
+     transition: color 0.3s;
+ }
+ 
+ .service_box h4:hover {
+     color: #007bff; /* Color azul moderno al pasar el cursor */
+ }
+ 
+ .blu_colo i {
+     background: linear-gradient(145deg, #007bff, #0056b3); /* Gradiente azul moderno */
+ }
+ 
+ .yell_colo i {
+     background: linear-gradient(145deg, #ffc107, #e0a800); /* Gradiente amarillo moderno */
+ }
+ 
+ .yelldark_colo i {
+     background: linear-gradient(145deg, #fd7e14, #e66b00); /* Gradiente naranja moderno */
+ }
+ 
+ .service .read_more {
+     margin: 0 auto;
+     padding-top: 70px;
+ }
+ 
+
+ .service_box i {
+     position: relative;
+     z-index: 1;
+ }
+
+ .service_box a:active {
+     border: 2px solid red !important; /* Borde rojo al hacer clic en el enlace */
+ }
+ 
+ /* end service section */
+
+/** vehicles section **/
+
+.vehicles {
+     background-color: #fff;
+     padding: 70px 0 155px 0;
+}
+
+.vehicles .titlepage {
+     text-align: center;
+     padding-bottom: 60px;
+}
+
+.vehicles .titlepage p {
+     color: #0d0202;
+     padding-top: 15px;
+     text-align: center;
+     margin: 0 50px;
+     font-size: 17px;
+     font-weight: 400;
+}
+
+.vehicles_truck {
+     background-color: #efedf0;
+     transition: ease-in all 0.5s;
+     width: 100%;
+     border-radius: 25px;
+     padding: 35px 0;
+}
+
+.vehicles_truck:hover {
+     background-color: #fff;
+     transition: ease-in all 0.5s;
+     box-shadow: 0 0 16px rgba(22, 22, 23, 15%)
+}
+
+.vehicles_truck figure {
+     margin: 0;
+}
+
+.blac_co {
+     color: #DF1C2A;
+     font-size: 25px;
+     line-height: 20px;
+     font-weight: bold;
+     text-transform: uppercase;
+     margin-top: 34px;
+}
+
+.vehicles .read_more {
+     margin-top: 0px;
+     margin: 0 auto;
+}
+
+#veh .carousel-caption {
+     position: inherit;
+     padding: 0;
+}
+
+#veh .carousel-indicators {
+     display: none;
+}
+
+#veh .carousel-control-prev,
+#veh .carousel-control-next {
+     width: 50px;
+     height: 50px;
+     background: #efedf0;
+     opacity: 1;
+     font-size: 30px;
+     color: #000;
+     border-radius: 5px;
+     top: 111%;
+     z-index: 999;
+}
+
+#veh .carousel-control-prev:hover,
+#veh .carousel-control-next:hover,
+#veh .carousel-control-prev:focus,
+#veh .carousel-control-next:focus {
+     background: #DF1C2A;
+     color: #fff;
+}
+
+#veh a.carousel-control-prev {
+     position: absolute;
+     left: 46%;
+}
+
+#veh a.carousel-control-next {
+     position: absolute;
+     right: 46%;
+     bottom: 10px;
+}
+
+.vehicles .read_more {
+     margin: 0 auto;
+     padding-top: 150px;
+}
+
+
+/** end vehicles section **/
+
+
+/** Marcas de Confianza **/
+
+#brands {
+     padding: 90px 0;
+     background-color: #DF1C2A;
+     border-radius: 50px;
+ }
+ 
+ #brands .titlepage {
+     text-align: center;
+     padding-bottom: 60px;
+ }
+ 
+ #brands .titlepage h2 {
+     color: #fff;
+ }
+ 
+ #brands .titlepage p {
+     color: #fff;
+     font-size: 17px;
+     line-height: 24px;
+     font-weight: 500;
+     padding-top: 20px;
+ }
+ 
+ #brands img {
+     max-width: 100%;
+     display: block;
+     margin: 0 auto;
+     padding: 20px 0;
+     max-height: 250px; /* Ajusta la altura máxima a 200px */
+     object-fit: contain; /* Asegura que la imagen se ajuste sin deformarse */
+ }
+ 
+ /* Responsiveness for mobile devices */
+ @media (max-width: 768px) {
+     #brands .carousel-inner .row {
+         display: flex;
+         flex-wrap: wrap;
+     }
+     #brands .carousel-inner .row > div {
+         flex: 1 0 50%; /* Two items per row */
+         max-width: 50%;
+         padding: 10px; /* Adjust padding as needed */
+     }
+ }
+ 
+ @media (max-width: 576px) {
+     #brands .carousel-inner .row > div {
+         flex: 1 0 100%; /* One item per row */
+         max-width: 100%;
+     }
+ }
+ 
+
+
+/** choose section **/
+
+.choose {
+     background-color: #fff;
+     padding-top: 90px;
+}
+
+.choose .titlepage {
+     text-align: center;
+     padding-bottom: 60px;
+}
+
+.choose_box i {
+     float: left;
+     padding-right: 20px;
+}
+
+.choose_box h3 {
+     padding-top: 46px;
+     color: #DF1C2A;
+     font-weight: bold;
+     font-size: 30px;
+     line-height: 30px;
+}
+
+.choose_box p {
+     display: inline-block;
+     color: #202121;
+     font-size: 17px;
+     line-height: 30px;
+     padding: 10px 0 70px 0;
+}
+
+
+/** end choose section **/
+
+
+/** contact section **/
+
+.contact {
+     background: #fff;
+     padding-top: 90px;
+}
+
+.contact .titlepage {
+     text-align: left;
+     padding-bottom: 60px;
+}
+
+.main_form {
+     background: #fff;
+     border-radius: 20px;
+     max-width: 426px;
+     width: 100%;
+     float: right;
+}
+
+.main_form .contactus {
+     border: #cce9fe solid 1px;
+     border-radius: 10px;
+     margin-bottom: 25px;
+     width: 100%;
+     height: 60px;
+     background: transparent;
+     color: #8f8d8d;
+     font-size: 18px;
+     font-weight: normal;
+     padding: 0 15px;
+}
+
+.main_form .contactusmess {
+     border: #cce9fe solid 1px;
+     border-radius: 10px;
+     padding: 0 15px;
+     margin-bottom: 25px;
+     width: 100%;
+     padding-top: 9px;
+     padding-bottom: 14px;
+     background: transparent;
+     color: #8f8d8d;
+     font-size: 18px;
+     font-weight: normal;
+     height: 168px;
+}
+
+.send_btn {
+     background: #DF1C2A;
+     font-weight: 500;
+     font-size: 18px;
+     width: 198px;
+     color: #fff;
+     height: 57px;
+     margin-top: 20px !important;
+     transition: ease-in all 0.5s;
+     text-transform: uppercase;
+     border-radius: 30px;
+     margin: 0 auto;
+     display: block;
+}
+
+.send_btn:hover {
+     background: #202121;
+     transition: ease-in all 0.5s;
+}
+
+#request *::placeholder {
+     color: #959596;
+     opacity: 1;
+}
+
+.co_tru {
+     padding-right: 50px;
+}
+
+.co_tru figure {
+     margin: 0;
+}
+
+.co_tru figure img {
+     width: 100%;
+}
+
+
+/** end contact section **/
+
+
+/** footer **/
+.footer {
+     background: #f7f7f9;
+     margin-top: 90px;
+     padding-top: 90px;
+     text-align: center;
+ }
+ 
+ ul.location_icon {
+     padding-top: 12px;
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ ul.location_icon li {
+     font-size: 21px;
+     line-height: 30px;
+     color: #353535;
+     text-align: left;
+     padding-bottom: 35px;
+     display: flex;
+     align-items: center;
+ }
+ 
+ ul.location_icon li a {
+     font-size: 40px;
+     color: #f80f0f;
+     line-height: 40px;
+     padding-right: 16px;
+ }
+ 
+ ul.location_icon li a:hover {
+     color: #353535;
+ }
+ 
+ .map {
+     margin: 0;
+ }
+ 
+ .map-container {
+     width: 100%;
+     position: relative;
+     padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+     height: 0;
+ }
+ 
+ .map-iframe {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+ }
+ 
+ .bottom_form {
+     margin-top: 50px;
+     width: 100%;
+ }
+ 
+ .bottom_form h3 {
+     font-weight: 600;
+     font-size: 20px;
+     text-align: left;
+     color: #353535;
+     padding-bottom: 15px;
+ }
+ 
+ .bottom_form .enter {
+     border: inherit;
+     padding: 0px 19px;
+     width: 66%;
+     height: 49px;
+     background: #fff;
+     color: #000;
+     font-size: 16px;
+     font-weight: 500;
+ }
+ 
+ .sub_btn {
+     font-size: 16px;
+     transition: ease-in all 0.5s;
+     background-color: #0f98f8;
+     color: #fff;
+     padding: 10px 0px;
+     max-width: 105px;
+     width: 100%;
+     display: block;
+     font-weight: 600;
+ }
+ 
+ .sub_btn:hover {
+     background-color: #000;
+     color: #fff;
+ }
+ 
+ .copyright {
+     background-color: #f80f0f;
+     margin-top: 70px;
+     padding: 20px 0;
+ }
+ 
+ .copyright p {
+     color: #fff;
+     font-size: 18px;
+     line-height: 22px;
+     text-align: center;
+     font-weight: normal;
+ }
+ 
+ .copyright a {
+     color: #fff;
+ }
+ 
+ .copyright a:hover {
+     color: #000;
+ }
+ 
+ /* Responsive Styles */
+ @media (max-width: 768px) {
+     ul.location_icon li {
+         font-size: 18px;
+         line-height: 26px;
+     }
+ 
+     ul.location_icon li a {
+         font-size: 30px;
+         line-height: 30px;
+         padding-right: 10px;
+     }
+ 
+     .map-container {
+         padding-bottom: 75%; /* Aspect ratio for mobile */
+     }
+ }
+ 
+
+/** whatsapp **/
+.whatsapp-button {
+     position: fixed;
+     bottom: 20px;
+     left: 20px;
+     z-index: 1000;
+     background-color: #25d366;
+     border-radius: 50%;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+     width: 60px;
+     height: 60px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: transform 0.3s;
+ }
+ .whatsapp-button img {
+     width: 35px;
+     height: 35px;
+ }
+ .whatsapp-button:hover {
+     transform: scale(1.2);
+ }
+ 
+
+ .map-container {
+     display/** Maps **/: flex;
+     justify-content: flex-end;
+ }
+ 
+ .map-iframe {
+     border: 0;
+     width: 70%;
+     height: 300px;
+ }
+ 
+ .menuServicios a {
+     display: block;
+     padding: 5px 0;
+     color: #333; /* Cambia el color del texto de los enlaces si es necesario */
+     text-decoration: none;
+ }
+ .menuServicios {
+     display: none;
+ }
+ 
+
+ 
+ .menuServicios a.yellow {
+     color: #fffc3a; /* Cambia el color del texto si es necesario */
+     /* Agrega más estilos según sea necesario */
+ }
+ 
+
+ .Mantenimiento-view .conat_info li a i {
+    color: black;
+ }
+
+ /* Email*/
+ .email-link {
+     font-size: 20px;
+     color: #353535; /* Color de texto predeterminado */
+ }
+ 
+ .email-link:hover {
+     color: red; /* Color de texto al pasar el ratón */
+ }
+ 
+ .email-label-smaller {
+     font-size: 20px; /* Tamaño de fuente más pequeño */
+ }
+ 
+/* slider promocional */
+
+.slider {
+     width: 75vw;
+     height: auto;
+     margin: auto;
+     overflow: hidden;
+ }
+ 
+ .slider .slide-track {
+     display: flex;
+     width: fit-content; /* Ajusta el ancho al contenido */
+     animation: scroll 30s linear infinite; /* Ajusta el tiempo según tus necesidades */
+ }
+ 
+ .slider .slide {
+     width: auto; /* Ancho automático para adaptarse al contenido */
+     padding: 0 10px; /* Añade espacio alrededor del texto */
+     text-align: center; /* Centra el texto horizontalmente */
+     white-space: nowrap; /* Evita que los textos se desborden a una nueva línea */
+     overflow: hidden; /* Oculta cualquier texto que se desborde */
+ }
+ 
+ @keyframes scroll {
+     0% {
+         transform: translateX(0);
+     }
+     100% {
+         transform: translateX(-100%);
+     }
+ }
+ /*social iconos */
+
+ .social-icons {
+     display: flex;
+     gap: 10px; /* Espacio entre los iconos */
+     margin-top: 10px; /* Ajusta según necesites para espacio entre el teléfono y los iconos */
+ }
+ 
+ .social-icons a {
+     font-size: 1.2em;
+     color: inherit; /* Mantener el color del enlace */
+ }
+ 
+ .social-icons a:hover {
+     color: #000; /* Color al pasar el ratón, ajústalo según tu diseño */
+ }
+ 
+
+ 
+/* Popup styles */
+.popup {
+     display: none; /* Hidden by default */
+     position: fixed;
+     z-index: 1;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     overflow: auto;
+     background-color: rgba(0,0,0,0.5);
+     animation: fadeIn 0.5s; /* Animation */
+ }
+ 
+ .popup-content {
+     background-color: #fff;
+     margin: 15% auto;
+     padding: 20px;
+     border: 1px solid #888;
+     width: 80%;
+     max-width: 600px; /* Maximum width */
+     position: relative; /* Relative positioning for close button */
+     animation: slideIn 0.5s; /* Animation */
+     border-radius: 10px; /* Rounded corners */
+ }
+ 
+ .close {
+     position: absolute;
+     top: 10px;
+     right: 20px;
+     color: #aaa;
+     font-size: 28px;
+     font-weight: bold;
+     cursor: pointer;
+ }
+ 
+ .close:hover,
+ .close:focus {
+     color: black;
+     text-decoration: none;
+     cursor: pointer;
+ }
+ 
+ /* Animations */
+ @keyframes fadeIn {
+     from {opacity: 0;}
+     to {opacity: 1;}
+ }
+ 
+ @keyframes slideIn {
+     from {margin-top: -300px; opacity: 0;}
+     to {margin-top: 15%; opacity: 1;}
+ }
+ 
+ /* Header */
+ .popup-header {
+     text-align: center;
+     margin-bottom: 20px;
+ }
+ 
+ .popup-header h2 {
+     margin: 0;
+ }
+ 
+ /* Section */
+ .section {
+     margin-bottom: 20px;
+ }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+ 
+ .section h3 {
+     margin-top: 0;
+ }
+ 
+ /* Contact Info */
+ .contact-info p {
+     margin: 5px 0;
+ }
+ 
+ /* Empty paragraph style for space */
+ .popup-content .empty-paragraph {
+     margin-top: 20px;
+ }
+ 
+ 
+
+ #servicios-precios {
+     margin-top: 20px;
+ }
+ 
+ #servicios-precios h2 {
+     font-size: 24px;
+     color: #333;
+     margin-bottom: 10px;
+ }
+ 
+ #servicios-precios label {
+     font-size: 16px;
+     color: #666;
+     display: block;
+     margin-bottom: 5px;
+ }
+ 
+ #servicios-precios select {
+     width: 100%;
+     padding: 8px;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+     font-size: 16px;
+     color: #333;
+     margin-bottom: 10px;
+ }
+ 
+ #servicios-precios p#precio {
+     font-size: 18px;
+     color: #27ae60;
+     font-weight: bold;
+ }
+ 
+
+
+ 
+
+ #service-info {
+     text-align: center;
+     padding: 2em 0;
+ }
+ 
+ #service-info h1 {
+     color: red;
+     font-size: 2.5em;
+ }
+ 
+ #service-gallery {
+     text-align: center;
+     padding: 2em 0;
+ }
+ 
+ .gallery {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta el ancho mínimo y máximo de las columnas según sea necesario */
+     gap: 10px; /* Ajusta el espacio entre las imágenes */
+ }
+ 
+ .gallery img {
+     width: 200px; /* Ancho fijo */
+     height: 200px; /* Altura fija */
+     object-fit: cover;
+     border: 3px solid red; /* Borde rojo */
+     transition: transform 0.5s ease;
+ }
+ 
+ 
+ 
+ 
+ .gallery img:hover {
+     transform: scale(1.2);
+ }
+
+ .co_tru {
+     margin-top: -150px; /* Puedes ajustar este valor según sea necesario */
+  }
+
+ 
+.vehicle-img {
+   max-width: 100%;
+   min-width: 200px;
+   max-height: 200px;
+   min-height: 200px;
+   object-fit: cover;
+}

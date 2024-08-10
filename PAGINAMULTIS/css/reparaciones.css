@@ -1,0 +1,308 @@
+/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700i,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,800i&display=swap');
+
+/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
+ 2) font-family: 'Poppins', sans-serif;
+ ----------------------------------------*****/
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(css/animate.min.css);
+@import url(css/normalize.css);
+@import url(css/icomoon.css);
+@import url(css/font-awesome.min.css);
+@import url(css/meanmenu.css);
+@import url(css/owl.carousel.min.css);
+@import url(css/swiper.min.css);
+@import url(css/slick.css);
+@import url(css/jquery.fancybox.min.css);
+@import url(css/jquery-ui.css);
+@import url(css/nice-select.css);
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('images/logos.png');
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+  background-size: 10px 100%;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #e74c3c;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #ed321d;
+}
+
+p {
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 100px auto 100px; /* Definir columnas para imágenes y texto */
+  gap: 20px;
+  padding: 20px;
+}
+
+.side-image {
+  width: 100px; /* Ancho fijo para las imágenes laterales */
+  height: auto;
+  border: 2px solid red; /* Añadir borde rojo a las imágenes */
+  align-self: start; /* Alinear la imagen al inicio */
+}
+
+.text-container {
+  grid-column: 2;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espacio entre las tarjetas */
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  flex: 1 0 calc(30% - 20px); /* Ancho de cada tarjeta */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1200px) {
+  .card {
+    flex: 1 0 calc(45% - 20px); /* Ancho de cada tarjeta en pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 0 calc(100% - 20px); /* Ancho completo en pantallas pequeñas */
+  }
+}
+
+.card h2 {
+  font-size: 20px;
+  color: #e60000;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.intro-card {
+  background: linear-gradient(to bottom, #ffffff, #f64040);
+  color: #000000;
+  font-weight: bold;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+}
+
+.bannerR {
+  position: relative;
+  background: url('../images/1.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: center 46%; /* Ajusta este valor para mover la imagen hacia abajo */
+  height: 300px; /* Ajusta la altura del banner según tus necesidades */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Añade margen inferior para separación */
+}
+
+
+.banner-title {
+  color: #ee2e19;
+  font-size: 60px;
+  line-height: 70px;
+  padding-bottom: 45px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .banner-title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+
+/* Estilo para el botón de cotización similar al diseño del formulario */
+.cotizacion-btn {
+  display: block;
+  margin: 0 auto; /* Esto centrará el botón horizontalmente */
+  padding: 15px 30px;
+  background-color: #ff0000; /* Color similar al diseño */
+  color: #fff; /* Texto en color blanco */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra similar al diseño */
+}
+
+.cotizacion-btn:hover {
+  background-color: #ab1111; /* Cambio de color al pasar el mouse */
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 2% auto;
+  padding: -11px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilo para el formulario dentro del popup */
+form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+
+.repair-section {
+  position: relative;
+  top: 150px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+
+
+
+.slider2 {
+  max-width: 75vw; /* Establece un ancho máximo para el slider */
+  width: 75vw; /* Ancho relativo al viewport width */
+  height: auto;
+  margin: auto;
+  overflow: hidden; /* Evita que el contenido del slider se desborde */
+}
+
+.slider2 .slide-track {
+  display: flex;
+  width: fit-content; /* Ajusta el ancho al contenido */
+  animation: scroll 30s linear infinite; /* Ajusta el tiempo según tus necesidades */
+}
+
+.slider2 .slide {
+  width: auto; /* Ancho automático para adaptarse al contenido */
+  padding: 0 10px; /* Añade espacio alrededor del texto */
+  text-align: center; /* Centra el texto horizontalmente */
+  white-space: nowrap; /* Evita que los textos se desborden a una nueva línea */
+  overflow: hidden; /* Oculta cualquier texto que se desborde */
+}
+
+.gallery-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid red; /* Añade un borde rojo de 2px a las imágenes */
+}
+
+body {
+  background-image: url('images/logos.png');
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+  background-size: 10px 100%; /* Ajusta el valor de 10px según el ancho deseado de las líneas rojas */
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+}

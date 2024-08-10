@@ -1,0 +1,171 @@
+
+/* Estilos para el banner de la sección de equipos aliados */
+.bannerE {
+    position: relative; 
+    background: url('../images/equiposAliados.jpg') no-repeat center center;
+    background-size: cover;
+    height: 300px; /* Ajusta la altura del banner según tus necesidades */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Añade margen inferior para separación */
+}
+
+.banner-title {
+    
+     color: #ffffff;
+     font-size: 60px;
+     line-height: 70px;s
+     padding-bottom: 45px;
+    font-weight: bold;
+   
+}
+/* FAQ Section Styles */
+
+.faq-section {
+    padding: 60px 0;
+    background-color: #F5F5F5;
+    color: #333;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: #DF1C2A;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    font-size: 18px;
+    color: #666;
+}
+
+.faq-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.faq-item {
+    width: 300px;
+    margin: 0 20px 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-5px);
+}
+
+.question {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.answer {
+    font-size: 16px;
+    color: #666;
+}
+
+/* cajas */
+#cajas-seccion {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#cajas-seccion .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#cajas-seccion h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+#cajas-seccion .descripcion p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+#cajas-seccion .tipos-cajas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch; /* Asegura que todas las cajas tengan la misma altura */
+}
+
+#cajas-seccion .caja {
+    width: 48%; /* Ajustamos el ancho a 48% para ocupar más espacio */
+    background: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto; /* Ajustamos la altura para que se ajuste automáticamente */
+    transition: transform 0.3s, box-shadow 0.3s; /* Añadimos una transición para un efecto suave */
+}
+
+#cajas-seccion .caja img {
+    width: 100%;
+    max-height: 280px; /* Establecemos una altura máxima para las imágenes */
+    object-fit: cover; /* Aseguramos que la imagen se ajuste bien dentro de su contenedor */
+    margin-bottom: 15px;
+}
+
+#cajas-seccion .caja h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#cajas-seccion .caja p {
+    font-size: 16px;
+    color: #666;
+    margin-top: auto; /* Empuja el texto hacia abajo */
+}
+
+/* Efecto hover */
+#cajas-seccion .caja:hover {
+    transform: translateY(-10px); /* Mueve la caja hacia arriba cuando el ratón está sobre ella */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Incrementa la sombra para un efecto de elevación */
+}
+
+.send_btnn {
+    background: #DF1C2A;
+    font-weight: 500;
+    font-size: 18px;
+    width: 198px;
+    color: #fff;
+    height: 57px;
+    margin-top: 20px !important;
+    transition: ease-in all 0.5s;
+    text-transform: uppercase;
+    border-radius: 30px;
+    /* Remueve la siguiente línea */
+    /* margin: 0 auto; */
+    /* Añade la siguiente línea */
+    margin-left: 0;
+    display: block;
+}
+
+
+.send_btnn:hover {
+    background: #202121;
+    transition: ease-in all 0.5s;
+}
